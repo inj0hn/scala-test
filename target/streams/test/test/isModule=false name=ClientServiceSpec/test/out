@@ -1,0 +1,16 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mClientServiceSpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET/version[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 200 status code and the correct version name[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST/customer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 200 status code and a Customer JSON in the response[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 400 status code when the customer name already exists[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 400 status code when the JSON request is invalid[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 400 status code when the Customer name is missing[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET/customer[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 200 status code and the existing customer in the response[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 200 status code and all existing customers in the response[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GET/customer response: [{"customerId":"9e0bd11b-fa85-4d05-80f5-3935a6df995d","name":"bar","active":true,"createdAt":1508424917145,"updatedAt":1508424917145,"createdBy":"test","updatedBy":"test","contacts":null},{"customerId":"b83e17ac-d249-4fcc-9f2e-5735a88f6b0f","name":"foo","active":true,"createdAt":1508424918155,"updatedAt":1508424918155,"createdBy":"fox","updatedBy":"fox","contacts":null}] [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGET/customer/id[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 200 status code and the correct customer in the response[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  + GET/customer/id response: {"customerId":"886a15bf-04b4-4ae1-9d13-709c245a04a5","name":"fubar","active":true,"createdAt":1508424918262,"updatedAt":1508424918262,"createdBy":"fu","updatedBy":"fu","contacts":null} [0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a 404 status code when the customer id is invalid[0m[0m
